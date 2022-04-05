@@ -10,38 +10,158 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Animalandia Bootstrasp</title>
 </head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../utils/logo.jpg" alt="logo animalandia">
+        </div>
+        <div class="buttons">
+          <a href="login.html"><button type="button" class="b-azul">  Ingresar</button></a> 
+            <button type="button" class="b-morado"> Registrarse</button>
+        </div>
+        </div>
+    </header>
+</div>
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="src/pages/equipo.html">Equipo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="src/pages/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="src/pages/agenda.html">Agenda tu cita</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="src/pages/contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="src/pages/tips.html">Tips</a>
-        </li>
-        </ul>
+  <div class="container-fluid">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="equipo.html">Equipo</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="agenda.html">Agenda tu cita</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="tips.html">Tips</a>
+      </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="b-azul btn-outline-success buscar-nav" type="submit"> Buscar</button>
-      </form>
-    </div>
-    </div>
-  </nav>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="b-azul btn-outline-success buscar-nav" type="submit"> Buscar</button>
+    </form>
+  </div>
+  </div>
+</nav>
+<main>
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card" id="maps">
+            <div class="card-body" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.056880467629!2d-74.10587668489971!3d4.583811343935516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98de8b2cdf01%3A0xcb94d4852598b934!2sKuepa%20-%20Restrepo!5e0!3m2!1ses!2sco!4v1646451310777!5m2!1ses!2sco"></iframe>
+                <p class="card-text"> <p><strong>Dirección:</strong> Cra. 19 #20 - 21sur, Bogotá<br>
+                    <strong>Teléfono:</strong> 601 222 2222 <br>
+                                    <strong>Email:</strong> contacto@kuepa.edu.co</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card " id="cardform">
+            <div class="card-body">
+                <h1 class="tcontacto">Llena el formulario y nos contactaremos contigo</h1>
+                <article id="form-contacto">
+                    <div class="form">
+<i class="fas fa-solid fa-user"></i>
+                        <form action="index.html" method="get">
+                            <label for="name">Ingresa tu nombre
+                                <input type="text" name="name" id="name">
+          </div>
+                            </label>
+          <div class="form">
+                            <label for="telefono">Ingresa tu número de teléfono
+                                <input type="number">
+                            </label>
+                        </div>
+                            <div class="form">
+                            <label for="email">Ingresa tu email
+<input type="email">
+                            </label>
+              </div>
+                           <div class="form">
+                            <label for="sede">¿Desde qué sede quieres que nos comuniquemos contigo?
+                           <select name="sede" id="sede">
+                           <option value="0">Elige una sede</option>
+                   <option value="1">Kennedy</option>
+                                    <option value="2">Suba</option>
+             <option value="3">Fontibón</option>
+                           <option value="4">Centro</option>
+                                </select>
+                            </label>
+                        </div>
+                            <div class="form">
+                   <label for="solicitud-servicio">¿De qué servicio deseas información?
+                      <select name="solicitud-servicio" id="solicitud-servicio">
+                          <option value="0">Elige un servicio</option>
+                                    <option value="1">Vacunación</option>
+                   <option value="2">Laboratorio Clínico</option>
+                                    <option value="3">Consulta Veterinaria</option>
+                     <option value="4">Estética de Mascotas</option>
+                                </select>
+                       </label>
+                        </div>
+               <div class="form">
+                            <label for="botones-form"></label>
+                            <input class="b-morado" type="submit" value="Enviar">
+                         <input class="b-morado" type="reset" value="Borrar">
+                   </form>       
+                       </div>
+                </article>
+           </article>
+        </section>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+<footer>
+    <div class="box-footer">
+      <div class="foot">
+          <img src="../utils/bx-building 1.svg" alt="Icono building">
+          <h3>Sedes</h3>
+          <p>
+              Sede Kennedy</br>
+              Sede Suba</br>
+              Sede Fontibón </br>
+              Sede Centro</br>
+          </p>
+      </div>
+      <div class="foot">
+          <img src="../utils/bx-building 1.svg" alt="Icono building">
+          <h3>Sedes</h3>
+          <p>
+              Sede Kennedy</br>
+              Sede Suba</br>
+              Sede Fontibón </br>
+              Sede Centro</br>
+          </p>
+      </div>
+      <div class="foot">
+          <img src="../utils/bx-building 1.svg" alt="Icono building">
+          <h3>Sedes</h3>
+          <p>
+              Sede Kennedy</br>
+              Sede Suba</br>
+              Sede Fontibón </br>
+              Sede Centro</br>
+          </p>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

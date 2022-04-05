@@ -125,6 +125,20 @@ background-color: rgba(117,41,149, 0.5);
 .banner{
 	width: 100%;
 }
+#cardform{
+	align-items: center;
+justify-content: center;
+padding: 1rem;
+margin: 10px;
+color: var(--dark-color);
+background-color:#00B3B1;
+}
+#maps{
+	align-items: center;
+justify-content: center;
+padding: 1rem;
+margin: 10px;
+}
 /*Resolución de tablet*/
 @media screen and (max-width: 768px) {
 	#agenda{
