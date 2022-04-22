@@ -83,7 +83,6 @@ nav{
     padding: 2rem;
 	width:30%;
 }
-
 .promocion h1{
     color: var(--white-color);
     font-size: 28px;
@@ -128,15 +127,21 @@ background-color: rgba(117,41,149, 0.5);
 	align-items: center;
 justify-content: center;
 padding: 1rem;
-margin: 10px;
+margin: 30px;
 color: var(--dark-color);
-background-color:#00B3B1;
+background-color:#8fcccb95;
 }
 #maps{
 	align-items: center;
 justify-content: center;
 padding: 1rem;
 margin: 10px;
+}
+#maps .card-body{
+padding: 10px;
+}
+#accordionFlushExample{
+    margin: 40px;
 }
 .form-control{
 border-color: aqua;
