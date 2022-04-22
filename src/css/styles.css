@@ -148,7 +148,11 @@ border-color: aqua;
 }
 #dashboard{
     display: flex;
-   
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 6rem;
 }
 .contenido{
     background-color: rgba(255, 255, 255, 0.4);
